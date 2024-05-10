@@ -22,20 +22,20 @@ header {
 }
 
 main {   
-    max-width: 800px;
+    max-width: 800px;   
     margin: 20px auto;
     padding: 20px;
     text-align: left;
 }
 
 section {
-    color: white;
+    color: #ffffff;
 }
 i{
-    color: yellow;
+    color: #ffff00;
 }
 a{
-    color: red;
+    color: #ff0000;
 }
 ul, ol{
     padding-left: 20px;
@@ -49,13 +49,9 @@ img{
     height: auto;
 }
  
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-  }
+@media screen and (max-width: 600px) {
+    img {
+        width: 100%;
+        margin: 10px 0; 
+    }
+}
